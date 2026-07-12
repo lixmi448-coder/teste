@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            /* Ajustado para carregar a imagem começando pelo canto esquerdo superior */
+            background: url('imagens/fundo3.png') no-repeat left top fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        h1 { text-shadow: 2px 2px 4px #000; margin-bottom: 30px; }
+        
+        .grid-desenhos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .canal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .canal:hover { transform: scale(1.1); }
+
+        .canal img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            border: 3px solid #00d4ff;
+            background-color: white;
+            object-fit: cover;
+        }
+
+        .nome-canal {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .btn-voltar {
+            margin-top: 50px;
+            padding: 15px 30px;
+            background: #00d4ff;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid white;
+            transition: 0.3s;
+        }
+
+        .btn-voltar:hover { transform: scale(1.1); background: white; }
+    </style>
+</head>
+<body>
+
+    <h1>Seção de Desenhos</h1>
+    
+    <div class="grid-desenhos">
+        <!-- Canal Tom e Jerry -->
+        <div class="canal" onclick="window.location.href='tom.html'">
+            <img src="imagens/tom (2).png" alt="Tom e Jerry">
+            <span class="nome-canal">Tom e Jerry</span>
+        </div>
+
+        <!-- Canal Pica-Pau -->
+        <div class="canal" onclick="window.location.href='picapau.html'">
+            <img src="imagens/picapau.png" alt="Pica-Pau">
+            <span class="nome-canal">Pica-Pau</span>
+        </div>
+
+        <!-- Canal BOOMERANG -->
+        <div class="canal" onclick="window.location.href='boomerang.html'">
+            <img src="imagens/boomerang.png" alt="BOOMERANG">
+            <span class="nome-canal">BOOMERANG</span>
+        </div>
+    </div>
+
+    <a href="index.html" class="btn-voltar">Voltar ao Menu</a>
+
+</body>
+</html>
