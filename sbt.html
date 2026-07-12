@@ -34,7 +34,7 @@
             margin-bottom: 20px;
         }
 
-        /* Aumentei drasticamente o espaço superior */
+        /* Espaço superior mantido conforme solicitado */
         .conteudo-abaixo {
             width: 90%;
             margin-top: 300px !important; 
@@ -64,7 +64,13 @@
 <body>
     <div class="video-box">
         <h2>SBT AO VIVO</h2>
-        <iframe src="https://www.youtube.com/embed/LLpNUqHVam8" frameborder="0" allowfullscreen></iframe>
+        <!-- Código do iframe otimizado para ocultar elementos extras -->
+        <iframe 
+            src="https://www.youtube.com/embed/LLpNUqHVam8?rel=0&modestbranding=1&autoplay=1&mute=0" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
         <a href="index.html" class="btn-voltar">Voltar ao Menu</a>
     </div>
 
