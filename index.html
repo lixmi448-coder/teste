@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpPlay Canais</title>
+    
+    <!-- Script Popunder Adsterra configurado -->
+    <script src="https://pl30304887.effectivecpmnetwork.com/dd/0a/9f/dd0a9f5cf0ee8e5fb39546a26d6aa388.js"></script>
+
+    <style>
+        body { 
+            margin: 0; 
+            background: url('imagens/fundo.png') no-repeat left top fixed; 
+            background-size: cover; 
+            font-family: sans-serif; 
+            color: white; 
+            padding: 20px;
+        }
+
+        .header-container { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 30px; 
+        }
+
+        h1 { margin-bottom: 20px; text-shadow: 2px 2px 4px #000; }
+
+        .banner-ad { 
+            margin: 20px 0; 
+            min-height: 90px; 
+            display: flex; 
+            justify-content: center; 
+            width: 100%;
+        }
+
+        .grid-canais { 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            gap: 30px; 
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .canal { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            cursor: pointer; 
+            width: 150px; 
+            transition: 0.3s;
+        }
+
+        .canal:hover { transform: scale(1.1); }
+
+        .canal img { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 15px; 
+            border: 3px solid #00d4ff; 
+            background-color: white; 
+            object-fit: cover; 
+        }
+
+        .nome-canal {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        /* Estilo da nova fileira de Desenho - MAIOR E RETANGULAR */
+        .linha-aba { 
+            margin-top: 50px; 
+            width: 100%; 
+            display: flex; 
+            justify-content: center; 
+        }
+
+        .aba-desenho { 
+            cursor: pointer; 
+            transition: 0.3s; 
+        }
+        
+        .aba-desenho:hover { transform: scale(1.05); }
+
+        .aba-desenho img { 
+            width: 400px; 
+            height: 150px; 
+            border-radius: 15px; 
+            border: 3px solid #00d4ff; 
+            background-color: white;
+            object-fit: contain; /* Garante que a imagem inteira apareça */
+        }
+
+        @media (max-width: 600px) {
+            .canal { width: 120px; }
+            .canal img { width: 120px; height: 120px; }
+            .aba-desenho img { width: 280px; height: 105px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Canais Disponíveis</h1>
+        
+        <div class="banner-ad">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '1a86e4316840f3397af2438649315a4a',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.effectivecpmnetwork.com/1a86e4316840f3397af2438649315a4a/invoke.js"></script>
+        </div>
+    </div>
+
+    <div class="grid-canais">
+        <!-- SBT -->
+        <div class="canal" onclick="window.location.href='sbt.html'">
+            <img src="imagens/sbt.png" alt="SBT">
+            <span class="nome-canal">SBT</span>
+        </div>
+
+        <!-- Record -->
+        <div class="canal" onclick="window.location.href='record.html'">
+            <img src="imagens/record.png" alt="Record TV">
+            <span class="nome-canal">Record TV</span>
+        </div>
+
+        <!-- TV Brasil -->
+        <div class="canal" onclick="window.location.href='tvbrasil.html'">
+            <img src="imagens/tvbrasil.png" alt="TV Brasil">
+            <span class="nome-canal">TV Brasil</span>
+        </div>
+
+        <!-- CNN Brasil -->
+        <div class="canal" onclick="window.location.href='cnnbrasil.html'">
+            <img src="imagens/cnnbrasil.png" alt="CNN Brasil">
+            <span class="nome-canal">CNN Brasil</span>
+        </div>
+
+        <!-- Caze TV -->
+        <div class="canal" onclick="window.location.href='cazetv.html'">
+            <img src="imagens/cazetv.png" alt="Caze TV">
+            <span class="nome-canal">Caze TV</span>
+        </div>
+    </div>
+
+    <!-- Nova fileira de Desenho -->
+    <div class="linha-aba">
+        <div class="aba-desenho" onclick="window.location.href='desenhos.html'">
+            <img src="imagens/desenhos.png" alt="Desenhos">
+        </div>
+    </div>
+
+</body>
+</html>
