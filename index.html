@@ -74,34 +74,36 @@
             text-shadow: 1px 1px 2px #000;
         }
 
-        /* Estilo da nova fileira de Desenho - MAIOR E RETANGULAR */
+        /* Estilo da fileira de abas - MAIOR E RETANGULAR */
         .linha-aba { 
-            margin-top: 50px; 
+            margin-top: 30px; 
             width: 100%; 
             display: flex; 
-            justify-content: center; 
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
 
-        .aba-desenho { 
+        .aba { 
             cursor: pointer; 
             transition: 0.3s; 
         }
         
-        .aba-desenho:hover { transform: scale(1.05); }
+        .aba:hover { transform: scale(1.05); }
 
-        .aba-desenho img { 
+        .aba img { 
             width: 400px; 
             height: 150px; 
             border-radius: 15px; 
             border: 3px solid #00d4ff; 
             background-color: white;
-            object-fit: contain; /* Garante que a imagem inteira apareça */
+            object-fit: contain; 
         }
 
         @media (max-width: 600px) {
             .canal { width: 120px; }
             .canal img { width: 120px; height: 120px; }
-            .aba-desenho img { width: 280px; height: 105px; }
+            .aba img { width: 280px; height: 105px; }
         }
     </style>
 </head>
@@ -156,10 +158,16 @@
         </div>
     </div>
 
-    <!-- Nova fileira de Desenho -->
+    <!-- Fileira de abas -->
     <div class="linha-aba">
-        <div class="aba-desenho" onclick="window.location.href='desenhos.html'">
+        <!-- Desenho -->
+        <div class="aba" onclick="window.location.href='desenhos.html'">
             <img src="imagens/desenhos.png" alt="Desenhos">
+        </div>
+        
+        <!-- Canais BR -->
+        <div class="aba" onclick="window.location.href='canaisbr.html'">
+            <img src="imagens/canaisbr.png" alt="Canais BR">
         </div>
     </div>
 
